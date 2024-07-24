@@ -1,11 +1,11 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
+  typescript:{
     ignoreBuildErrors: true,
   },
   images: {
-    remotePatterns: [{ protocol: 'https', hostname: 'img.clerk.com' }]
+    remotePatterns: [{protocol: 'https', hostname: 'img.clerk.com'}]
   }
 };
 
@@ -13,7 +13,7 @@ export default withSentryConfig(nextConfig, {
 // For all available options, see:
 // https://github.com/getsentry/sentry-webpack-plugin#options
 
-org: "nitro",
+org: "nitro-pn",
 project: "javascript-nextjs",
 
 // Only print logs for uploading source maps in CI
